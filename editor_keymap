@@ -7,10 +7,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+w",
-        "command": "-workbench.action.switchWinndow"
-    },
-    {
         "key": "ctrl+shift+n",
         "command": "cursorDownSelect",
         "when": "editorTextFocus"
@@ -189,5 +185,10 @@
         "key": "alt+p",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
     },
 ]
