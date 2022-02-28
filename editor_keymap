@@ -1,5 +1,3 @@
-# key map used in vscode
-
 [
     {
         "key": "ctrl+w",
@@ -44,6 +42,11 @@
     {
         "key": "ctrl+/",
         "command": "undo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
         "when": "editorTextFocus"
     },
     {
@@ -189,6 +192,26 @@
     {
         "key": "shift+alt+p",
         "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+n",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
 ]
