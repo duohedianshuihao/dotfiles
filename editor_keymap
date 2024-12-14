@@ -113,7 +113,7 @@
         "command": "-workbench.action.openEditorAtIndex3"
     },
     {
-        "key": "ctrl+4",
+        "key": "cmd+4",
         "command": "workbench.action.openEditorAtIndex4"
     },
     {
@@ -214,4 +214,89 @@
         "command": "-editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "-cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorTextFocus"
+    },
+    {
+        "key": "alt+o",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+p",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+r",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+t",
+        "command": "go.toggle.test.file"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "leetcode.testSolution"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "leetcode.submitSolution"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "workbench.action.editorLayoutSingle"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+cmd+[",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "cmd+r cmd+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+cmd+]",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "cmd+r cmd+right",
+        "command": "-workbench.action.focusRightGroup"
+    }
 ]
